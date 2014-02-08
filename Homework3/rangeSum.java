@@ -10,12 +10,25 @@ Dados 2 numeros (limite inferior y superior), recorra el rango e imprima los num
 public class rangeSum {   
 
    public static void main(String[] args) {
-
-		System.out.println("limites: "+args[0]+" "+args[1]);
-
-      
-         System.out.println("numero actual es:" );
-      
-   }
+		int n1;
+		int n2;
+		int m=0;
+		n1= Integer.parseInt(args[0].toString());
+		n2= Integer.parseInt(args[1].toString());
+	if(n1<n2){		
+		while(n1<n2-1)
+		{
+		n1=n1+1; 
+         System.out.println(n1);
+  		}    
+  		} else if(n2<n1)
+			{
+			while(n2<n1-1)
+			{
+			n2=n2+1;
+		System.out.println(n2);
+			}
+			}	
+	}
 
 }

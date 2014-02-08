@@ -12,11 +12,12 @@ public class whileValue {
 
    public static void main(String[] args) {
    		int valorActual = 0;
-   		System.out.println(args[0]);
-
-   		//si valor actual < args[0]
-   			System.out.println("el valor actual es: "+valorActual);
-      
+ 		int z=0;
+		valorActual= Integer.parseInt(args[0].toString());
+		while(z<valorActual){
+   			System.out.println("el valor actual es: "+ z );
+      			z=z+1;
+	}
    }
 
 }
